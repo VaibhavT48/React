@@ -1,0 +1,27 @@
+{
+  "name": "igniting-application",
+  "version": "1.0.0",
+  "description": "/*In your existing project\r initialize npm into your repo\r install react and react-dom\r remove CDN links of react\r install parcel\r ignite your app with parcel\r add scripts for “start” and “build” with parcel commands\r add .gitignore file\r add browserlists\r build a production version of your code using parcel build*/",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VaibhavT48/React.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VaibhavT48/React/issues"
+  },
+  "homepage": "https://github.com/VaibhavT48/React#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
