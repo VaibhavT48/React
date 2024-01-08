@@ -1,7 +1,5 @@
-function Project(){
-    return(
-        <h2> project is ready</h2>
-    )
+function Project() {
+  return <h2> project is ready</h2>;
 }
 
-export default Project
+export default Project;

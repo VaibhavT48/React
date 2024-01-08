@@ -1,9 +1,7 @@
-// ## Namaste React Course by Akshay Saini
-// Chapter 04 - Talk is Cheap, show me the code
+
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-
 
 /* My Food App structure will look like this, 
             1) Header
@@ -24,18 +22,28 @@ import ReactDOM from "react-dom/client";
 */
 
 // Title component for display logo
+const Title = () => (
+  <a href="/">
+    <img className="logo" src="https://penji.co/wp-content/uploads/2022/08/10.-mr.-d-food-logo.jpg"alt="Food Fire Logo" />
+  </a>
+);
 
 // Header component for header section: Logo, Nav Items
 const Header = () => {
+ 
   return (
+   
     <div className="header">
-      
       <div className="nav-items">
+      
         <ul>
+        <Title/>
           <li>Home</li>
           <li>About</li>
           <li>Contact</li>
-          <li><i class="fa-solid fa-cart-shopping"></i></li>
+          <li>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </li>
         </ul>
       </div>
     </div>
@@ -1883,7 +1891,10 @@ const RestaurantCard = ({
       <h4>{cuisines.join(", ")}</h4>
       <h4>{area}</h4>
       <span>
-      <h4><i class="fa-solid fa-star"></i>{avgRating}</h4>
+        <h4>
+          <i class="fa-solid fa-star"></i>
+          {avgRating}
+        </h4>
         <h4>{lastMileTravelString}</h4>
         <h4>{costForTwoString}</h4>
       </span>
@@ -1905,17 +1916,13 @@ const Body = () => {
 
 // AppLayout component to show: Header, Body, Footer
 const AppLayout = () => {
-    return (
-      <React.Fragment>
-        <Header />
-        <Body />
-        
-      </React.Fragment>
-    );
-  };
-
-
-
+  return (
+    <React.Fragment>
+      <Header />
+      <Body />
+    </React.Fragment>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<AppLayout />);

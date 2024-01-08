@@ -1,8 +1,11 @@
-
+import Project from "./library.js";
 
 function App() {
   return (
-  <h1>React App | npm commands</h1>
+    <>
+      <Project />
+      <h1>Ready to lunch</h1>
+    </>
   );
 }
 

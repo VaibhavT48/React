@@ -1,4 +1,3 @@
-
 import React from "react";
 import ReactDOM from "react-dom/client";
 import FoodFireLogo from "./Images/Food Fire Logo.png";
@@ -38,7 +37,9 @@ const Header = () => {
           <li>Home</li>
           <li>About</li>
           <li>Contact</li>
-          <li><i class="fa-solid fa-cart-shopping"></i></li>
+          <li>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </li>
         </ul>
       </div>
     </div>
@@ -1886,7 +1887,10 @@ const RestaurantCard = ({
       <h4>{cuisines.join(", ")}</h4>
       <h4>{area}</h4>
       <span>
-      <h4><i class="fa-solid fa-star"></i>{avgRating}</h4>
+        <h4>
+          <i class="fa-solid fa-star"></i>
+          {avgRating}
+        </h4>
         <h4>{lastMileTravelString}</h4>
         <h4>{costForTwoString}</h4>
       </span>

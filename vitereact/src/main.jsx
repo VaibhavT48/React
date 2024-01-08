@@ -8,3 +8,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 )
+const AnotherElement = React.createElement(
+  'a',
+  {href:'http://google.com', target:'_blank'},
+  'Click here to visit google'
+)
+AnotherElement
